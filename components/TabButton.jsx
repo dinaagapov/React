@@ -1,10 +1,10 @@
-export default function TabButton({label, onClick}){
+export default function TabButton({label, onClick,isClicked}){
     function handleClick(){
         console.log("Hello World");
     }
     return(
         <li> 
-        <button onClick={onClick}>{label} </button>
+        <button className={isClicked? 'active' : undefined} onClick={onClick}>{label} </button>
         </li> 
     );
 }
