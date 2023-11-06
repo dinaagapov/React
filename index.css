@@ -15,7 +15,8 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* For older WebKit browsers */
+  text-size-adjust: 100%; /* For newer versions of browsers like Chrome 54+, Chrome Android 54+, Edge 79+ */
   min-height: 80rem;
 }
 
